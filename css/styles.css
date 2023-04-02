@@ -29,6 +29,15 @@ p{
     margin: 0 auto;
     padding: 0 15px;
 }
+ul {
+    padding: 0px 0px 0px 0px;
+}
+
+.footerinfocompany{
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
 
 
 .section{
@@ -53,14 +62,15 @@ p{
 }
 
 .logo {
-    font-family: 'Raleway' sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 26px;
     text-decoration: none;
     font-weight: 700;
     color: var(--font-color-logo);
 }
 
-.logo-header{
+.logo-header,
+{
     padding-right: 93px;
     padding-top: 24px;
     padding-bottom: 25px;
@@ -69,6 +79,8 @@ p{
 .logo-header-color {
     color: var(--font-coclo-logo-header-color);
 }
+  
+
 
 .logo-bottom-color {
    color: var(--font-color-logo-bottom);
@@ -124,16 +136,18 @@ list-style: none;
 }
 
 .logo-bottom{
-    display: block;
-    padding-bottom: 20px;
+    
+    padding-bottom: 30px;
 }
 
 .contact-bottom {
-display: flex;
+display: block;
 flex-direction: column;
 line-height: 1.7;
 padding-bottom: 60px;
 }
+
+
 
 
 .contact-bottom-adres {
@@ -181,6 +195,7 @@ padding-bottom: 60px;
 /*grafiki*/
 .image-galery-list{
     list-style: none;
+    display: flex;
 }
 .image-gallery-item-descr {
     font-weight: 700px;
