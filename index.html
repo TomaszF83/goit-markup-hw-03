@@ -7,13 +7,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:ital,wght@0,400;0,500;0,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" 
+     href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" 
+     integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" 
+     crossorigin="anonymous" 
+     referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="css/styles.css" />
     <title>Webstudio</title>
   </head>
    <body >
-    <header>
-      <a class="logo" href="./index.html">Web<span class="logo-header">Studio</span></a>
-      <nav>
+    <header class="header">
+      <section class="container head-section">
+      <div class="logo-header">
+       <a class="logo" href="./index.html">Web<span class="logo-header-color">Studio</span></a>
+      </div>
+      <nav class="nav-header">
         <ul class="navigation">
           <!--menu nawigacji-->
           <li><a class="navigation-link" href="">Agencja</a></li>
@@ -26,38 +34,39 @@
         <li><a class="contact-header-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
         <li><a class="contact-header-link" href="tel:48111111111">+48 111 111 111</a></li>
       </ul>
+      </section>
     </header>
     <main>
-      <section class="home">
+      <section class="home section">
         <!--sekcja home-->
         <h1 class="title-site">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
       <button class="btn-service" type="button">Zamów usługe</button>
       </section>
       <!--sekcja tekstu-->
-      <section class="text-container">
-        <ul class="text-container-list" style="list-style: none;">
-         <li class="text-container-list-item">
+      <section class="text section-container">
+        <ul class="text-content-list" style="list-style: none;">
+         <li class="text-content-list-item">
           <h3>LOREM IPSUM</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
             sodales dui. Interdum et malesuada
           </p>
          </li>
-        <li class="text-container-list-item">
+        <li class="text-content-list-item">
          <h3>LOREM IPSUM</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
             sodales dui. Interdum et malesuada
           </p>
         </li>
-        <li class="text-container-list-item">
+        <li class="text-content-list-item">
           <h3>LOREM IPSUM</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
             sodales dui. Interdum et malesuada
           </p>
         </li>
-        <li class="text-container-list-item">
+        <li class="text-content-list-item">
           <h3>LOREM IPSUM</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
@@ -66,7 +75,7 @@
         </li> 
         </ul>
       </section>
-      <section class="profession">
+      <section class="profession container-section">
           <h2 class="profession-header">Czym się zajmujemy</h2>
           <ul class="profession-img">
           <li><img 
@@ -92,51 +101,62 @@
         </ul>
       </section>
       <!--sekcja personalna-->
-      <section class="team">
+      <section class="team section">
+        <div class="container">
           <h2 class="team-header">Nasz zespół</h2>
           <ul class="team-list">
-            <li>
+            <li class="team-list-item">
                 <img
               src="images/header/Product_Designer.jpg" 
               alt="Product Designer" 
               width="270" 
               height="260">
-             <p class="team-person">John Doe</p>
-             <p class="team-speciality"> Designer</p>
+              <div class="team-members">
+                <p class="team-person">John Doe</p>
+                <p class="team-speciality"> Designer</p>
+              </div>
             </li>
-            <li>
+            <li class="team-list-item">
               <img 
               src="images/header/Frontend_Developer.jpg" 
               alt="Frontend Developer" 
               width="270" 
               height="260">
-             <p class="team-person">John Doe</p>
-             <p class="team-speciality">Frontend Developer</p>
+              <div class="team-members">
+                <p class="team-person">John Doe</p>
+                <p class="team-speciality">Frontend Developer</p>
+              </div>
             </li>
-            <li>
+            <li class="team-list-item">
               <img 
               src="images/header/Marketing.jpg" 
               alt="Marketing" 
               width="270" 
               height="260">
-             <p class="team-person">John Doe</p>
-             <p class="team-speciality">Marketing</p>
+              <div class="team-members">
+                <p class="team-person">John Doe</p>
+                <p class="team-speciality">Marketing</p>
+              </div>
             </li>
-            <li>
+            <li class="team-list-item">
               <img 
               src="images/header/UI_Designer.jpg" 
               alt="UI Designer" 
               width="270" 
               height="260">
-             <p class="team-person">John Doe</p>
-             <p class="team-speciality">UI Designer</p>
+              <div class="team-members">
+                <p class="team-person">John Doe</p>
+                <p class="team-speciality">UI Designer</p>
+              </div>
             </li>
           </ul>
+        </div>
         </section>
     </main>
     <footer class="bottom">
-      <a class="logo" href="./index.html">Web<span class="logo-bottom">Studio</span></a>
-      <address>
+      <div class="container">
+      <a class="logo logo-bottom" href="./index.html">Web<span class="logo-bottom-color">Studio</span></a>
+      <address class="contact-bottom">
         <ul style="list-style: none;">
             <li><a class="contact-bottom-adres" 
               href="https://www.google.com/maps/place/al.+Jerozolimskie+21,+00-508+Warszawa,+Polska/@52.2305286,21.0134568,17z/data=!3m1!4b1!4m6!3m5!1s0x471eccf3e52bee23:0xc5163bc7ec8d4437!8m2!3d52.2305286!4d21.0160317!16s%2Fg%2F11csnfr8s8" 
@@ -146,6 +166,7 @@
             <li><a class="contact-bottom-link" href="tel:48111111111">+48 111 111 111</a></li>
         </ul>
       </address>
+      </div>
     </footer>
   </body>
 </html>

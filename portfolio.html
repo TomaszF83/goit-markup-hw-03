@@ -7,31 +7,39 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:ital,wght@0,400;0,500;0,700;1,900&display=swap" rel="stylesheet">
-
-    <title>WebStudio</title>
+    <link rel="stylesheet" 
+     href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" 
+     integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" 
+     crossorigin="anonymous" 
+     referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/styles.css" />
+    <title>WebStudio</title>
 </head>
 <body>
-    <header>
-        <a class="logo" href="./index.html">Web<span class="logo-header">Studio</span></a>
-        <nav>
+    <header class="header">
+        <section class="container head-section">
+          <div class="logo-header">
+           <a class="logo" href="./index.html">Web<span class="logo-header-color">Studio</span></a>
+          </div>
+         <nav class="nav-header">
             <ul class="navigation">
                 <!--menu nawigacyjne-->
                 <li><a class="navigation-link" href="./index.html">Agencja</a></li>
                 <li><a class="navigation-link" href="./portfolio.html">Portfolio</a></li>
                 <li><a class="navigation-link" href="#">Kontakt</a></li>
             </ul>
-        </nav>
-        <div>
+         </nav>
+        <div >
          <ul class="contact-header" style="list-style: none;">
             <!--linki do kontaktu-->
             <li><a class="contact-header-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
             <li><a class="contact-header-link" href="tel:48111111111">+48 111 111 111</a></li>
          </ul>
         </div>
+     </section>
     </header>
     <main>
-        <div class="subject">
+        <div class="subject section container">
             <!--lista przycisków tematycznych-->
             <ul class="subject-list">
                 <li><button class="btn-subject" type="button">Wszystkie</button></li>
@@ -41,8 +49,9 @@
                 <li><button class="btn-subject" type="button">Marketing</button></li>
             </ul>
         </div>
-        <div class="image-gallery">
-            <!--grafiki-->
+        <div>
+            <!--sekcja graficzna-->
+            <section class="image-galery">
             <ul class="image-gallery-list" style="list-style: none;">
                 <li class="image-gallery-item">
                     <img src="images/Portfolio/Technocrack(1).jpg"
@@ -117,6 +126,7 @@
                     <p class="value">Aplikacja</p>
                 </li>
             </ul>
+        </section>
         </div>
 
     </main>

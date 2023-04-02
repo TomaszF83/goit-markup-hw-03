@@ -6,48 +6,105 @@
     --active-color: #2196f3;
     --font-color: #212121;
     --font-color-logo: #2196f3;
-    --font-coclo-logo-header: #000000;
+    --font-coclo-logo-header-color: #000000;
     --font-color-logo-bottom: #FFFFFF;
     --font-color-dark-background:#FFFFFF;
-    --font-color-bottom: #ffffff;
+    --font-color-bottom-color: #ffffff;
     --font-color-bottom-with-alpha: #ffffff99;
     --font-color-contact-header:#757575;
     --font-color-paragraph:#757575;
     --background-color-btn-unactive: #f5f4fa;
 }
+h1,
+h2,
+h3,
+ul,
+p{
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
  body {
   font-family: 'Roboto', 'sans-serif';
   background-color: var(--background-color-main);
   color: var(--font-color);
   font-size: 14px;
-  
 }
+
+
+.header{
+    border-bottom: 1px solid #ececec;
+}
+
+.head-section{
+    display: flex;
+}
+
 .logo {
-    font-family: 'Raleway';
+    font-family: 'Raleway' sans-serif;
     font-size: 26px;
     text-decoration: none;
     font-weight: 700;
     color: var(--font-color-logo);
 }
-.logo-header {
-    color: var(--font-coclo-logo-header);
+
+.logo-header{
+    padding-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
 }
-.logo-bottom {
-   color: var(--font-color-logo-bottom); 
+
+.logo-header-color {
+    color: var(--font-coclo-logo-header-color);
 }
+
+.logo-bottom-color {
+   color: var(--font-color-logo-bottom);
+}
+
+.nav-header,
+.contact-header {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.navigation{
+    list-style: none;
+    display: flex;
+    gap: 46px;
+    padding-right: 227px;
+}
+
 .navigation {
 list-style: none;
 }
+
 .navigation-link {
    text-decoration: none;
    color: var(--font-color);
    font-weight: 500;
-   font-size: 14px;
+   font-size: 15px;
    
 }
 .navigation-link:hover,
 .navigation-link:focus {
    color: var(--active-color);
+}
+.contact-header{
+    display: flex;
+    gap: 50px;
 }
 .contact-header-link {
     list-style: none;
@@ -60,19 +117,36 @@ list-style: none;
 .contact-header-link:focus {
     color: var(--active-color);
 }
+
 .bottom {
    background-color: var(--background-coclor-section);
+   padding-top: 60px;
 }
+
+.logo-bottom{
+    display: block;
+    padding-bottom: 20px;
+}
+
+.contact-bottom {
+display: flex;
+flex-direction: column;
+line-height: 1.7;
+padding-bottom: 60px;
+}
+
+
 .contact-bottom-adres {
     text-decoration: none;
     font-style: normal;
-    color: var(--font-color-bottom);
+    color: var(--font-color-bottom-color);
 }
 .contact-bottom-link {
     color: var(--font-color-bottom-with-alpha);
     text-decoration: none;
     font-style: normal;
 }
+
 .contact-bottom-adres:hover,
 .contact-bottom-adres:focus,
 .contact-bottom-link:hover,
@@ -82,7 +156,9 @@ list-style: none;
 /*strona portfolio*/
 .subject-list{
     list-style: none;
-       
+    display: flex;
+    justify-content: center;
+    gap: 8px;
 }
 .btn-subject{
     font-family: 'Roboto' , sans-serif;
@@ -92,12 +168,15 @@ list-style: none;
     font-size: 16px; 
     background-color: var(--background-color-btn-unactive);
     color: var(--font-color);
+    border: 1px solid var(--background-color-btn-unactive);
        
 }
 .btn-subject:hover,
 .btn-subject:focus {
     background-color: var(--active-color);
     color: var(--font-color-dark-background);
+    border: 1px solid var(--active-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12) ;
 }
 /*grafiki*/
 .image-galery-list{
@@ -108,57 +187,80 @@ list-style: none;
     font-size: 18px;
 }
 .value{
-    font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     color: var(--font-color-paragraph);
 }
 /*koniec portfolio*/
 /*sekcja home*/
 .home{
     background-color: var(--background-coclor-section);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 200px 280px;
 }
 .title-site{
+    text-align: center;
+    max-width: 696;
     font-weight: 900;
     font-size: 44px;
-    text-align: center;
+    line-height: 1.4;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
     color: var(--font-color-dark-background);
 }
 
 .btn-service {
+    padding: 10px 41px;
+    border-radius: 4px;
+    border: 1px solid var(--active-color)
     font-family: 'Roboto', sans-serif;
     cursor: pointer;
-    border-radius: 4px;
-    padding: 6px 22px;
-    text-align: center;
     font-weight: 700;
     font-size: 16px;
+    letter-spacing: 0,06em;
     color: var(--font-color-dark-background);
 /*button domyślnie jest ustawiony w color: #000000 */
-    background-color: var(--active-color);}
+    background-color: var(--active-color);
+}
 
 
 /*sekcja tekstowa*/
-.
-.text-container-list{
+
+.text-content-list{
     list-style: none;
+    display: flex;
+    gap: 30px;
+    
+
+    
 }
-.text-container-list-item h3{
+.text-content-list-item h3{
     font-weight: 700;
     font-size: 14px;
+    
 }
-.text-container-list-item p {
+.text-content-list-item p {
     line-height: 24px;
     color: var(--font-color-paragraph);
+    letter-spacing: 0.03em;
+    padding-top: 10px;
 }
 /*sekcja profession*/
 .profession-header,
 .team-header  {
+    margin-bottom: 50px;
     text-align: center;
     font-weight: 700;
     font-size: 36px;
 }
 .profession-img {
     list-style: none;
+    display: flex;
+    gap: 30px;
+
 }
 /*sekcja team*/
 .team{
@@ -166,14 +268,30 @@ list-style: none;
 }
 .team-list{
     list-style: none;
+    display: flex;
+    gap: 30px;
 }
+
+.team-members{
+    box-shadow: 3px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0xp 0xp 4xp 4xp;
+    border: 1px solid var(--background-color-border);
+    background-color: var(--background-color-main);
+}
+
+
 .team-person,
 .team-speciality{
+    display: flex;
+    justify-content: center;
+    text-align: center;
     text-align: center;
     font-size: 16px;
 }
 .team-person{
-    font-weight: 500;
+    font-weight: 700;
+    margin-bottom: 10px;
 }
 .team-speciality {
     color: var(--font-color-paragraph);
