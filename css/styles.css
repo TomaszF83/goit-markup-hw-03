@@ -32,6 +32,10 @@ p{
 ul {
     padding: 0px 0px 0px 0px;
 }
+.flex-container{
+    display: wrap;
+    flex-wrap: wrap;
+}
 
 .footerinfocompany{
     position: relative;
